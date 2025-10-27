@@ -13,7 +13,7 @@ function EditEmployee() {
     // Fetch employee details by ID
     const fetchEmployee = async () => {
       try {
-        const res = await axios.get(`https://employee-backend-uk5v.onrender.com/employees/${id}`);
+        const res = await axios.get(`https://employee-backend-uk5v.onrender.com/employees/${name}`);
         setName(res.data.name);
         setRole(res.data.role);
       } catch (err) {

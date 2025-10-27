@@ -12,7 +12,7 @@ function EmployeeList() {
 
   const fetchEmployees = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/employees");
+      const res = await axios.get("https://employee-backend-uk5v.onrender.com/employees");
       setEmployees(res.data);
     } catch (err) {
       alert("Failed to fetch employees");
@@ -21,7 +21,7 @@ function EmployeeList() {
 
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:5000/employees/${id}`);
+      const res = await axios.delete(`https://employee-backend-uk5v.onrender.com/employees/${id}`);
       alert(res.data.message); // backend message
       fetchEmployees(); // refresh list
     } catch (err) {

@@ -21,7 +21,7 @@ function EmployeeList() {
 
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:5000/employees/${name}`);
+      const res = await axios.delete(`http://localhost:5000/employees/${id}`);
       alert(res.data.message); // backend message
       fetchEmployees(); // refresh list
     } catch (err) {

@@ -1,0 +1,72 @@
+.employee-list-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.employee-list-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.employee-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.employee-list-container th,
+.employee-list-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.employee-list-container th {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn,
+.delete-btn,
+.add-link {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  margin-right: 8px;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+.add-link {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #28a745;
+}
+
+.add-link:hover {
+  background-color: #1f7a32;
+}
